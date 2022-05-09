@@ -121,10 +121,22 @@ main {
   color: black;
 }
 
+.card a::before {
+  content: " ";
+  position: fixed;
+  display: block;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+}
+
 .card a:hover {
   background-color: rgba(81, 170, 241, 255);
   border-color: rgba(81, 170, 241, 255);
   color: white;
+}
+
+.card a:hover::before {
+  display: none;
 }
 
 footer {
